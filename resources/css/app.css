@@ -1,0 +1,70 @@
+tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        @apply bg-slate-900 text-slate-100;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-lg transition-colors font-medium;
+    }
+    
+    .btn-secondary {
+        @apply border border-slate-600 text-slate-300 hover:bg-slate-700 px-6 py-3 rounded-lg transition-colors font-medium;
+    }
+    
+    .card {
+        @apply bg-slate-800 rounded-lg shadow-lg border border-slate-700;
+    }
+    
+    .input-field {
+        @apply w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-slate-100 placeholder-slate-400 focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400;
+    }
+    
+    .text-gradient {
+        @apply bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent;
+    }
+}
+
+@layer utilities {
+    .line-clamp-3 {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    
+    .animate-float {
+        animation: float 6s ease-in-out infinite;
+    }
+    
+    .animate-glow {
+        animation: glow 2s ease-in-out infinite alternate;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+    }
+    to {
+        box-shadow: 0 0 30px rgba(56, 189, 248, 0.8);
+    }
+}
