@@ -1,7 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { AuthProvider } from "@/Context/AuthContext";
+import { AuthProvider } from "./Context/AuthContext";
 import Navbar from "./Components/Layout/Navbar";
 import Footer from "./Components/Layout/Footer";
 import Home from "./Pages/Home";
@@ -12,8 +12,8 @@ import Contact from "./Pages/Contact";
 import AdminLogin from "./Pages/Admin/Login";
 import AdminDashboard from "./Pages/Admin/AdminDashboard";
 import AdminProjects from "./Pages/Admin/AdminProjects";
-import "./bootstrap";
 import "../css/app.css";
+import "./bootstrap";
 
 function App() {
     return (

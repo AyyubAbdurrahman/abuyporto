@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import api from "@/components/Utils/api";
+import api from "../Components/Utils/api";
 
 export default function ProjectDetail() {
     const { id } = useParams();

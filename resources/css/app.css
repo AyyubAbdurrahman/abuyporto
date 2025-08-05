@@ -2,13 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @layer base {
     html {
         scroll-behavior: smooth;
+        font-family: 'Inter', system-ui, sans-serif;
     }
     
     body {
         @apply bg-slate-900 text-slate-100;
+        margin: 0;
+        padding: 0;
+    }
+    
+    * {
+        box-sizing: border-box;
     }
 }
 

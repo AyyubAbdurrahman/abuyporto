@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AdminLayout from "../../Components/Admin/AdminLayout";
 import ProjectForm from "../../Components/Admin/ProjectForm";
-import api from "@/components/Utils/api"; 
+import api from "../../Components/Utils/api";
 
 export default function AdminProjects() {
     const [projects, setProjects] = useState([]);
