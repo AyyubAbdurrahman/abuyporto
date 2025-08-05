@@ -16,4 +16,12 @@ export default defineConfig({
             '@': '/resources/js',
         },
     },
+    css: {
+        postcss: {
+            plugins: [
+                require('tailwindcss'),
+                require('autoprefixer'),
+            ],
+        },
+    },
 });
